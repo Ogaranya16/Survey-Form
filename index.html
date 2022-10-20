@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+  </head>
+  <body>
+    <h1 id="title">Catena Survey Form</h1>
+    <p id="description">Thank you for taking out time to give us your feedback</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Name: <input type="text" id="name"  placeholder="Enter your name" required/></label>
+        <label id="email-label">Email: <input type="email" id="email" placeholder="Enter email address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required/></label>
+        <label id="number-label">Age (optional): <input type="number" id="number" min="15" max="120" placeholder="Age"/></label>
+        <label>How did you hear about us?
+          <select id="dropdown">
+            <option value="">(select-one)</option>
+            <option value="1">facebook Sponsored Ads</option>
+            <option value="2">Instagram Sponsored Ads</option>
+            <option value="3">Friends & Collegues</option>
+          </select>       
+        </label>
+        <label>Will you recommend us to others?
+          <label><input type="radio" name="recommendation" value="defintely" class="inline"/>Definitely</label>
+          <label><input type="radio" name="recommendation" value="maybe" class="inline"/>Maybe</label>
+        </label>
+        <label>what area(s) would you like improved? (check all that apply)
+          <label> <input type="checkbox" name="area" value="customer-care"class="inline"/> Customer Care</label>
+          <label> <input type="checkbox" name="area" value="website" class="inline"/> Website</label>
+          <label> <input type="checkbox" name="area" value="front-shop" class="inline"/> Front Shop</label>
+          <label> <input type="checkbox" name="area" value="online-shop" class="inline"/> Online Shop</label>
+          <label> <input type="checkbox" name="area" value="school-curriculum" class="inline"/>School Curriculum</label>
+          <label> <input type="checkbox" name="area" value="school-calender" class="inline"/> School calender</label>
+        </label>
+        <label> Any Comments or Suggestions
+          <textarea row="3" cols="30" placeholder="Enter text"></textarea>
+        </label>
+        <input type="submit" id="submit"/>
+      </fieldset>
+    </form>
+  </body>
+</html>
